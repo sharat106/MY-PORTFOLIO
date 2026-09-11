@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Potfolio </title>
+    <title>Student Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="top">
    <h1> WELCOME TO MY POTFOLIO !</h1>
-    <a href="">
-      <button > About</button>
+   <div> 
+    <a href="#about">
+      <button class="button"> About</button>
+      </a>  
+      <a href="#skills">
+      <button class="button"> Skills</button>
       </a>
-      <a href="">
-      <button > Skills</button>
+      <a href="#projects">
+      <button class="button" > Projects</button>
       </a>
-      <a href="">
-      <button > Projects</button>
-      </a>
-      <a href="">
-      <button > Contact</button>
-      </a>
+      <a href="#contact">
+      <button class="button"> Contact</button>
+      </a> 
+      </div>
       </header>
 
       <main>
         <section id="about">
-   <h1> Sharat X college </h1>
+   <h1> Sharat VVITU </h1>
 <img src="hanuman.jpg" alt="here is the image.">
 
    <p> I am a passionate web developer with a focus on front end technology
     <br>I am currently pursuing my btech in X college of engineering nellore.
     <br>I have learnt web development from <br> <em> CODE WITH SWAROOP !</em>
 <br>You can <b> click here </b> to check out what i have learnt in <b> HTML</b> </p>
-<hr>
 </section>
 
 <section id="skills">
@@ -42,13 +45,12 @@
 <li>  CSS Basics </li>
 <li>  JavaScript Basics </li>
  </ol>
- <hr>
  </section>
 
  <section id="projects">
  <h1>My Projects
  </h1>
- <table border="6" cellpadding="9"cellspacing="0">
+ <table border="3" cellpadding="9"cellspacing="0">
     <tr>
 <th>Project</th>
 <th>Descripton</th>
@@ -61,43 +63,48 @@
 <td> I have built a simple calculator in this course by code with swaroop </td>
     </tr>
 </table>
-<hr>
 </section>
 <section id="contact">
 <h1> CONTACT ME</h1>
 <form action="">
     <p>Feel free to get in touch with me using the form below</p>
-<br>
+    
+    <div>
 <label for="name"><b>Name:</b></label>
 <input type="text" placeholder="eg:sharat" required id="name " name="Name">
-<br>
+</div>
 <label for="email"><b>Email:</b></label>
 <input type="email"  placeholder="eg:abcd@gmail.com" required name="email" id="email">
-<br>
+<div>
 <label><b>Choose your gender:</b></label>
-<br>
+</div>
 <input type="radio" id="maleradio" value="male" required>
 <label for="maleradio">Male</label>
  <input type="radio" id="femaleradio" value="female" required>
 <label for="femaleradio">Female</label>
-<br>
+<div>
 <label><b>Select your interests:</b></label>
-<br>
+</div>
 <input type="checkbox" id="interest" value="coding" name="coding">
 <label for="interest">Coding</label>
 <input type="checkbox" id="interests" value="reading" name="reading">
-<label for="interests">Reading</label>
-<br>
+<label for="interests">Reading</label> 
+<div>
 <label for="bio"><b>Bio:</b></label>
-<br>
+</div>
 <textarea id="bio" placeholder="write your bio...." rows="3" cols="25" required></textarea> 
-<br>
-<button type="submit"> Submit</button>
-<button type="reset">Reset</button>
+<div>
+<button class="submit" type="submit"> Submit</button>
+<button class="submit" type="reset">Reset</button>
+</div>
 </form>
-</section>
+</section> 
 </main>
+<a href="#top"> 
+    <button  class="fixed" type="button">Top</button>
+</a>
 <footer> 
+
 <p>@ 2026 My portfolio</p>
 </footer>
 </body>
